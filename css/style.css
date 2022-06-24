@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: 2fr .5fr .5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav nav nav"
+        "header cuadro aside"
+        "primeraSeccion cuadro aside"
+        "primeraSeccion cuadro aside"
+        "form form aside"
+        "footer footer footer";
+        background-color: #f3ece6;
+}
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    background-color: #d4c1ba;
+    border: solid 1px #fffcf3;
+   
+}
+
+.logo{
+    width: 100px;
+    border: solid 1px #fffcf3
+}
+.nav ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: solid 1px #fffcf3
+    }
+
+.nav li{
+    display: flex;
+    margin: 10px;
+   
+    
+}
+nav li :hover{
+    background-color: #a47132;
+    color: black;
+}
+
+.nav a{
+    color: #a47132;
+    text-decoration: none;
+    border: solid 1px #a47132;
+    padding: 10px;
+
+}
+
+.header {
+    grid-area: header;
+    border: solid 1px #fffcf3;
+    text-align: center;
+    
+}
+.header h1{
+    color: #a47132;
+}
+
+.primeraSeccion {
+    grid-area: primeraSeccion;
+    border: solid 1px #fffcf3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+       
+}
+.primeraSeccion h2{
+    text-align: center;
+    color: #a47132;
+   
+  
+}
+.primeraSeccion p{
+    text-align: center;
+   
+}
+.primeraSeccion img{
+   width: 50%;
+   display: flex;
+   justify-content: center;
+}
+    
+
+
+
+
+.cuadro{
+    grid-area: cuadro;
+    background-image: url('../img/sole\ marcel.jpeg');
+    background-size: cover;
+    
+}
+
+.aside {
+    grid-area: aside;
+    background-color: #d4c1ba;
+    border: solid 1px #fffcf3;
+    padding: 15px;
+    text-align: center;
+    
+}
+.aside h3{
+    color: #a47132;
+    margin-bottom: 50px;
+}
+
+.form {
+    grid-area: form;
+    background-color: #d68983; 
+    border: solid 1px #fffcf3;
+    color: #a47132;
+}
+
+.footer {
+    grid-area: footer;
+    border: solid 1px #fffcf3;
+    background-color: #d4c1ba;
+}
